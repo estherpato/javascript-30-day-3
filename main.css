@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* JS - CSS styles */
+
+:root {
+    --base: #00ffae;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+
+.hl {
+    color: var(--base);
+}
+
+/* CSS styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    background: #16063a;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.controls {
+    margin: 50px auto;
+}
+
+input {
+    width: 100px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    background-color: rgba(255,255,255, 0.5);
+    height: 70px;
+    padding: 10px 0 10px 10px;
+    border-top: 1px solid white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--base);
+}
+
+.footer a:hover {
+    color: black;
+}
